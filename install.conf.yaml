@@ -30,6 +30,7 @@
         brew bundle
         brew cleanup
       fi
+    quiet: true
     stderr: true
 
   - description: APT Setup
@@ -43,4 +44,5 @@
            cat apt-install-list.txt |  xargs -n 1 sudo apt-get install -y
         fi
       fi
+    quiet: true
     stderr: true
