@@ -1,0 +1,32 @@
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  - id: check-added-large-files
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-docstring-first
+  - id: check-executables-have-shebangs
+  - id: check-json
+  - id: check-shebang-scripts-are-executable
+  - id: destroyed-symlinks
+  - id: mixed-line-ending
+    args: [--fix=lf]
+  - id: pretty-format-json
+    args: [--autofix]
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.13.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --line-width=80]
+- repo: https://github.com/pre-commit/mirrors-clang-format
+  rev: v18.1.6
+  hooks:
+  - id: clang-format
+    files: \.(c|cc|cpp|h|hpp)$

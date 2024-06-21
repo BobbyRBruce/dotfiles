@@ -1,0 +1,11 @@
+Host amarillo
+    User bbruce
+    Hostname amarillo.cs.ucdavis.edu
+
+Host page
+    User bobbyrbruce
+    Hostname page.cs.ucdavis.edu
+
+Host loupe
+    User bbruce
+    Hostname loupe.cs.wisc.edu

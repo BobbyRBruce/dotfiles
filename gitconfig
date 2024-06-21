@@ -1,0 +1,23 @@
+[user]
+				name = Bobby R. Bruce
+				email = bbruce@ucdavis.edu
+[push]
+				autoSetupRemote = true
+[filter "lfs"]
+				clean = git-lfs clean -- %f
+				smudge = git-lfs smudge -- %f
+				process = git-lfs filter-process
+				required = true
+[init]
+				defaultBranch = main
+				templateDir = ~/.git-template
+[pull]
+				ff = only
+[advice]
+				diverging = false
+[color]
+				us = auto
+[apply]
+				whitespace = fix
+[core]
+				excludesfiles = ~/.gitignore
