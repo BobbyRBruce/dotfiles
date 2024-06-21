@@ -2,6 +2,7 @@
     link:
       relink: true
       create: true
+
 - clean: ['~']
 
 - link:
@@ -16,8 +17,10 @@
     ~/.zshrc: zshrc
     ~/.Brewfile: Brewfile
     ~/.git-template/hooks/pre-commit: git-template-pre-commit
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
   - description: MacOS Setup
     command: |
       if [ "$(uname -s)" = "Darwin" ]
@@ -28,6 +31,7 @@
         brew cleanup
       fi
     stderr: true
+
   - description: APT Setup
     command: |
       if [ "$(uname -s)" = "Linux" ]
