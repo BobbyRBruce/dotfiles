@@ -1,4 +1,6 @@
 #!/bin/zsh
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
 
 which brew 2>&1 >/dev/null
 if [[ $? == 0 ]]

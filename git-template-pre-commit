@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
 
 INSTALL_PYTHON=`which python`
 ARGS=(hook-impl --config=.pre-commit-config.yaml --hook-type=pre-commit --skip-on-missing-config)

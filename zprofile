@@ -1,3 +1,6 @@
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
+
 if [ -d "/opt/homebrew" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
     LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:$(brew --prefix)/lib"

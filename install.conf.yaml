@@ -1,3 +1,6 @@
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
+
 - defaults:
     link:
       relink: true
