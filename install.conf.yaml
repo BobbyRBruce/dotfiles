@@ -19,7 +19,10 @@
     ~/.git-template/hooks/pre-commit: git-template-pre-commit
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+  - description: Obtain Submodules
+    command: git submodule update --init --recursive
+    quiet: true
+    stderr: true
 
   - description: MacOS Setup
     command: |
