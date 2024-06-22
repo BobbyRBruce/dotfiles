@@ -31,9 +31,9 @@
       if [ "$(uname -s)" = "Darwin" ]
       then
         ./brew-install.sh
-        brew update
+        brew update 2>&1
         brew bundle
-        brew cleanup
+        brew cleanup --quiet
       fi
     quiet: true
     stderr: true
