@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 # Set Github CoPilot Alias.
-eval "$(gh copilot alias - zsh)"
+eval "$(gh copilot alias -- zsh)"
