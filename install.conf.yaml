@@ -9,7 +9,6 @@
 - clean: ['~']
 
 - link:
-    ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.config/gh: gh
     ~/.config/gh-copilot: gh-copilot

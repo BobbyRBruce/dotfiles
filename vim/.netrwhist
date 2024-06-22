@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
-let g:netrw_dirhist_6='/Users/bobbyrbruce/.vscode'
-let g:netrw_dirhist_5='/Users/bobbyrbruce/Workspaces/symbolic-execution/mybuilddir/basic-function-pass'
-let g:netrw_dirhist_4='/Users/bobbyrbruce/Workspaces/gem5/.devcontainer'
-let g:netrw_dirhist_3='/Users/bobbyrbruce/Workspaces/gem5-tutorial-hpca-2024/.devcontainer'
-let g:netrw_dirhist_2='/Users/bobbyrbruce/Workspaces/gem5/src/doxygen'
-let g:netrw_dirhist_1='/Users/bobbyrbruce/Workspaces/gem5-ssbse-challenge-2023/ssbse-challenge-examples'
