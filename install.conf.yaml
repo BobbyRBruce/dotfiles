@@ -21,12 +21,12 @@
     ~/.git-template/hooks/pre-commit: git-template-pre-commit
 
 - shell:
-  - description: Obtain Submodules
+  - description: Obtaining Submodules
     command: git submodule update --init --recursive
     quiet: true
     stderr: true
 
-  - description: MacOS Setup
+  - description: Running MacOS Setup
     command: |
       if [ "$(uname -s)" = "Darwin" ]
       then
@@ -38,7 +38,7 @@
     quiet: true
     stderr: true
 
-  - description: APT Setup
+  - description: Running Linux/APT Setup
     command: |
       if [ "$(uname -s)" = "Linux" ]
       then
