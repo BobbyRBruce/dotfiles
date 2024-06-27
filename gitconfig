@@ -21,3 +21,4 @@
     whitespace = fix
 [core]
     excludesfiles = ~/.gitignore
+    editor = "vim"
