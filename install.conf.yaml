@@ -18,7 +18,6 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.Brewfile: Brewfile
-    ~/.git-template/hooks/pre-commit: git-template-pre-commit
 
 - shell:
   - description: Obtaining Submodules
