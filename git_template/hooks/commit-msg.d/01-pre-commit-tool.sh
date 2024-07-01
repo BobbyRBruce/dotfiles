@@ -11,7 +11,7 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 ARGS+=(--hook-dir "$HERE" -- "$@")
 
 
-if [ -f "$PRE_COMMIT_CONFIG" ]; then"
+if [ -f "$PRE_COMMIT_CONFIG" ]; then
     if [ -x "$INSTALL_PYTHON" ]; then
         exec "$INSTALL_PYTHON" -mpre_commit "${ARGS[@]}"
     elif command -v pre-commit > /dev/null; then

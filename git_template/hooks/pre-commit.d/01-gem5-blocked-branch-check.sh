@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # Copyright (c) 2024 Bobby R. Bruce
 # SPDX-License-Identifier: MIT
@@ -8,10 +8,16 @@
 # branches (PRs only), and github's fork sync feature breaks if I update
 # these branches.
 
-rev_parse=$(git rev-parse --abbrev-ref HEAD@{upstream})
+rev_parse=$(git rev-parse --abbrev-ref HEAD@{upstream} 2>&1)
+if [ $? != 0 ]; then
+    # if `git rev-parse` fails it's almost certainly because no upstream
+    # exits for this branch. In which case there's no problem
+    exit 0
+fi
+
 remote=$(echo $rev_parse | cut -d/ -f2)
 branch=$(echo $rev_parse | cut -d/ -f3)
-remote_url=$(git remote --get-url $remote |  rev | cut -d/ -f 1-2 | rev)
+remote_url=$(git remote get-url $remote |  rev | cut -d/ -f 1-2 | rev)
 
 
 if [ "$remote_url" = "bobbyrbruce/gem5" ] || \
