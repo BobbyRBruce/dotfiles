@@ -29,6 +29,7 @@
     ~/.profile: profile
     ~/.bash_logout: bash_logout
     ~/.bashrc: bashrc
+    ~/.git_template: git_template
 
 - shell:
   - description: Obtaining Submodules
