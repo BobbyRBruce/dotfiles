@@ -35,11 +35,7 @@ plugins=(
     docker
     docker-machine
     gh
-    git
     git-auto-fetch
-    git-commit
-    github
-    gitignore
     macos
     mongocli
     systemd
