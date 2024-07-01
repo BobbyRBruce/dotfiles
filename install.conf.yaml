@@ -36,6 +36,13 @@
     command: git submodule update --init --recursive
     quiet: true
     stderr: true
+  - description: Installing Oh My ZSH
+    command: |
+      if [ "$(uname -s)" = "Darwin" ] && [ ! -d ~/.oh-my-zsh ]
+      then
+       ./ohmyz-install.sh
+      fi
+    stderr: true
 
   - description: Running MacOS Setup
     command: |
