@@ -8,7 +8,7 @@
     <array>
       <string>sh</string>
       <string>-c</string>
-      <string>cd  $HOME; cat .github-sync-forks-targets | while read repo; do gh repo sync $repo --force; done</string>
+      <string>cd  $HOME; cat .github-sync-forks-targets | while read repo; do gh repo sync $(echo $repo | cut -d: -f1) --branch $(echo $repo | cut -d: -f2) --force; done<string>
     </array>
     <key>StartInterval</key>
     <integer>3600</integer>

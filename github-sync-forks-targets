@@ -2,3 +2,5 @@ bobbyrbruce/gem5:stable
 bobbyrbruce/gem5:develop
 bobbyrbruce/gem5-website:stable
 bobbyrbruce/gem5-website:develop
+bobbyrbruce/gem5-resources:stable
+bobbyrbruce/gem5-resources:develop
