@@ -22,7 +22,7 @@
 [core]
     excludesfiles = ~/.gitignore
     editor = "vim"
-    hooksPath = ~/.git_template/hooks
+    hooksPath = ~/.git-template/hooks
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [oh-my-zsh]
