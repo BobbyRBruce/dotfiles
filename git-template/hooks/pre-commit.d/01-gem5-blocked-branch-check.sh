@@ -15,9 +15,9 @@ if [ $? != 0 ]; then
     exit 0
 fi
 
-remote=$(echo $rev_parse | cut -d/ -f2)
-branch=$(echo $rev_parse | cut -d/ -f3)
-remote_url=$(git remote get-url $remote |  rev | cut -d/ -f 1-2 | rev)
+remote=$(echo $rev_parse | cut -d/ -f1)
+branch=$(echo $rev_parse | cut -d/ -f2)
+remote_url=$(git remote get-url $remote | rev | cut -d : -f 1| cut -d / -f 1-2 | rev)
 
 
 if [ "$remote_url" = "bobbyrbruce/gem5" ] || \
