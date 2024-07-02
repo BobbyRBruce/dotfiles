@@ -34,6 +34,7 @@ plugins=(
     dirhistory
     docker
     docker-machine
+    git
     gh
     git-auto-fetch
     macos
@@ -42,6 +43,8 @@ plugins=(
     command-not-found
     history
     brew
+    zsh-autosuggestions
+    z
 )
 source $ZSH/oh-my-zsh.sh
 
