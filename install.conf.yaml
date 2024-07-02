@@ -9,12 +9,6 @@
 - clean: ['~']
 
 - link:
-    ~/.github-sync-forks-targets:
-      path: github-sync-forks-targets
-      if: '[ "$(uname -s)" = "Darwin" ]'
-    ~/Library/LaunchAgents/launched.github-sync-forks.plist:
-      path: launched.github-sync-forks.plist
-      if: '[ "$(uname -s)" = "Darwin" ]'
     ~/.vimrc: vimrc
     ~/.config/gh: gh
     ~/.config/gh-copilot: gh-copilot
