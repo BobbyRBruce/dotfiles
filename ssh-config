@@ -1,6 +1,11 @@
 # Copyright (c) 2024 Bobby R. Bruce
 # SPDX-License-Identifier: MIT
 
+Host *
+    UseKeychain yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
+
 Host amarillo
     User bbruce
     Hostname amarillo.cs.ucdavis.edu
