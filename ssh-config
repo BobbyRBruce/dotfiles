@@ -12,3 +12,11 @@ Host page
 Host loupe
     User bbruce
     Hostname loupe.cs.wisc.edu
+
+Host blackmachine
+    User bobbyrbruce
+    Hostname blackmachine.local
+
+Host Challenger
+    User bbruce
+    Hostname challenger.cs.ucdavis.edu
