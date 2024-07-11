@@ -34,7 +34,6 @@ plugins=(
     dirhistory
     docker
     docker-machine
-    git
     gh
     git-auto-fetch
     macos
