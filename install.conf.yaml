@@ -22,6 +22,7 @@
       if: '[ "$(uname -s)" = "Darwin" ]'
     ~/.profile: profile
     ~/.bash_logout: bash_logout
+    ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.git-template: git-template
 
