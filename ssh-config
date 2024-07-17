@@ -1,5 +1,7 @@
-# Copyright (c) 2024 Bobby R. Bruce
-# SPDX-License-Identifier: MIT
+Host *
+    UseKeychain yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
 
 Host amarillo
     User bbruce
@@ -12,3 +14,11 @@ Host page
 Host loupe
     User bbruce
     Hostname loupe.cs.wisc.edu
+
+Host blackmachine
+    User bobbyrbruce
+    Hostname blackmachine.local
+
+Host Challenger
+    User bbruce
+    Hostname challenger.cs.ucdavis.edu
