@@ -14,7 +14,12 @@
     ~/.config/gh-copilot: gh-copilot
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
-    ~/.ssh/config: ssh-config
+    ~/.ssh/config:
+      path: ssh-config
+      if: '[ "$(uname -s)" != "Darwin" ]'
+    ~/.ssh/config:
+      path: ssh-config-mac
+      if: '[ "$(uname -s)" = "Darwin" ]'
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.Brewfile:
