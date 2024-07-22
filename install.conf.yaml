@@ -34,8 +34,6 @@
 - shell:
   - description: Obtaining Submodules
     command: git submodule update --init --recursive
-    quiet: true
-    stderr: true
   - description: Installing Oh My ZSH
     command: |
       if [ "$(uname -s)" = "Darwin" ] && [ ! -d ~/.oh-my-zsh ]
@@ -67,5 +65,6 @@
            cat apt-install-list.txt |  xargs -n 1 sudo apt-get install -y
         fi
       fi
-    quiet: true
-    stderr: true
+
+  - description: Installing gh copilot
+    command: gh extension install github/gh-copilot
