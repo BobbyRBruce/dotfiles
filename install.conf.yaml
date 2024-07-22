@@ -42,6 +42,13 @@
       fi
     stderr: true
 
+  - description: Adding private key passcode to keychain
+    command: |
+      if [ "$(uname -s)" = "Darwin" ]
+      then
+        ssh-add --apple-use-keychain ~/.ssh/id_rsa
+      fi
+
   - description: Running MacOS Setup
     command: |
       if [ "$(uname -s)" = "Darwin" ]
