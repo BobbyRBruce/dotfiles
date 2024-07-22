@@ -16,7 +16,7 @@
     ~/.gitignore: gitignore
     ~/.ssh/config:
       path: ssh-config
-      if: '[ "$(uname -s)" != "Darwin" ]'
+      if: '[ "$(uname -s)" = "Linux" ]'
     ~/.ssh/config:
       path: ssh-config-mac
       if: '[ "$(uname -s)" = "Darwin" ]'
