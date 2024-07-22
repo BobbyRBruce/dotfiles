@@ -5,6 +5,7 @@
     link:
       relink: true
       create: true
+      force: true
 
 - clean: ['~']
 
@@ -68,8 +69,15 @@
         which apt 2>&1 >/dev/null
         if [[ $? == 0 ]]
         then
+          command sudo &>/dev/null
+          if [[ $? == 0 ]]
+          then
            sudo apt update -y
-           cat apt-install-list.txt |  xargs -n 1 sudo apt-get install -y
+           cat apt-install-list.txt |  xargs -n 1 sudo apt install -y
+          else
+            apt update -y
+            cat apt-install-list.txt | xargs -n 1 apt install -y
+          fi
         fi
       fi
 
