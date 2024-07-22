@@ -33,3 +33,6 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]
 then
     . "$HOME/google-cloud-sdk/completion.zsh.inc"
 fi
+
+# Required in some environments for gpg to work correctly.
+export GPG_TTY=$(tty)
