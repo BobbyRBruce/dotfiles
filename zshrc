@@ -33,7 +33,6 @@ plugins=(
     colored-man-pages
     dirhistory
     docker
-    docker-machine
     gh
     git-auto-fetch
     macos
