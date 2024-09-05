@@ -10,6 +10,7 @@
 - clean: ['~']
 
 - link:
+    ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
     ~/.config/gh: gh
     ~/.config/gh-copilot: gh-copilot
