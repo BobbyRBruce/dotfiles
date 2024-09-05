@@ -10,6 +10,7 @@
 - clean: ['~']
 
 - link:
+    ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
     ~/.config/gh: gh
     ~/.config/gh-copilot: gh-copilot
@@ -83,14 +84,3 @@
 
   - description: Installing gh copilot
     command: gh extension install github/gh-copilot
-
-  - description: Add keysigning if available
-    command: |
-      if [[ $(gpg --list-keys --keyid-format=long | grep -w 66CD906391CAF072) ]]
-      then
-        if [[ ! $(cat ~/.gitconfig | grep -w "gpgsign") ]]
-        then
-           echo "[commit]" >> ~/.gitconfig
-           echo "    gpgsign = true" >> ~/.gitconfig
-        fi
-      fi

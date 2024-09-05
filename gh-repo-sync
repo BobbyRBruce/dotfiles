@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+# Copyright (c) 2024 Bobby R. Bruce
+# SPDX-License-Identifier: MIT
+
+# A simple script to sync my github forks with their upstreams.
+
+echo "Syncing github.com/bobbyrbruce/gem5-resources fork"
+gh repo sync bobbyrbruce/gem5-resources -b stable
+gh repo sync bobbyrbruce/gem5-resources -b develop
+
+echo "Syncing github.com/bobbyrbruce/gem5-website fork"
+gh repo sync bobbyrbruce/gem5-website -b stable
+gh repo sync bobbyrbruce/gem5-website -b develop
+
+echo "Syncing github.com/bobbyrbruce/gem5 fork"
+gh repo sync bobbyrbruce/gem5 -b stable
+gh repo sync bobbyrbruce/gem5 -b develop

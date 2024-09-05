@@ -36,3 +36,6 @@ fi
 
 # Required in some environments for gpg to work correctly.
 export GPG_TTY=$(tty)
+
+# Add the ~/.bin directory to the PATH.
+export PATH="$HOME/.bin:$PATH"

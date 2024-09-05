@@ -32,7 +32,6 @@ zstyle ':omz:update' frequency 7
 plugins=(
     colored-man-pages
     dirhistory
-    docker
     gh
     git-auto-fetch
     macos
