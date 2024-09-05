@@ -3,7 +3,7 @@
     email = bbruce@ucdavis.edu
 	signingkey = 91CAF072
 [push]
-    autoSetupRemote = false
+    autoSetupRemote = true
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
