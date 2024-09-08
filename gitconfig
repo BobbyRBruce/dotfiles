@@ -1,7 +1,7 @@
 [user]
     name = Bobby R. Bruce
     email = bbruce@ucdavis.edu
-	signingkey = 91CAF072
+    signingkey = 1AE89009
 [push]
     autoSetupRemote = true
 [filter "lfs"]
@@ -29,4 +29,3 @@
 	branch = false
 [commit]
 	gpgsign = true
-
