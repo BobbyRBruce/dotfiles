@@ -19,6 +19,6 @@ Host blackmachine
     User bobbyrbruce
     Hostname blackmachine.local
 
-Host Challenger
+Host challenger
     User bbruce
     Hostname challenger.cs.ucdavis.edu
