@@ -21,7 +21,9 @@ export PATH=$HOMEBREW_PREFIX/opt/python3/libexec/bin:$PATH
 export PATH="$HOMEBREW_PREFIX/opt/llvm/bin:$PATH"
 export LIBRARY_PATH="$HOMEBREW_PREFIX/opt/llvm/lib:$LIBRARY_PATH"
 export INCLUDE_PATH="$HOMEBREW_PREFIX/opt/llvm/include:$INCLUDE_PATH"
-export LDFLAGS="${LDFLAGS} -L/opt/homebrew/opt/llvm/lib/c++ -L/opt/homebrew/opt/llvm/lib -lunwind"
+export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib"
+export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include"
+
 
 # Updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]
