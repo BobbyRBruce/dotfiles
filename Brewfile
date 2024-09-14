@@ -1,32 +1,29 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
-brew "libpng"
-brew "zstd"
-brew "boost"
-brew "python@3.12"
-brew "capstone"
-brew "cmake"
-brew "commitlint"
-brew "coreutils"
-brew "doxygen"
-brew "ffmpeg"
-brew "gh"
-brew "ghostscript"
-brew "git"
-brew "git-lfs"
-brew "gpac"
-brew "gpg"
-brew "pkg-config"
-brew "hdf5"
-brew "jq"
-brew "lit"
-brew "llvm"
-brew "mas"
-brew "mkvtoolnix"
-brew "pandoc"
-brew "pre-commit"
-brew "pyyaml"
-brew "scons"
-brew "torsocks"
-brew "wget"
-cask "basictex"
+black
+capstone
+certifi
+cmake
+commitlint
+coreutils
+doxygen
+ffmpeg
+gh
+git
+git-crypt
+git-lfs
+gnupg
+gpac
+hdf5
+jq
+libunwind-headers
+lit
+llvm
+openjdk
+pandoc
+pinentry-mac
+podman
+pre-commit
+pylint
+python-setuptools
+ruby
+scons
+wget
