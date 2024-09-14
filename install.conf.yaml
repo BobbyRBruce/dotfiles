@@ -58,9 +58,6 @@
         # Annoying. Due to pyyaml being deprecated in Homebrew
         # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
         pip install --break-system-packages --user pyyaml
-
-        # For Mac this is useful.
-        echo "     UseKeychain yes" >>.ssh/config
       fi
     quiet: true
     stderr: true
