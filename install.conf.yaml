@@ -18,10 +18,6 @@
     ~/.gitignore: gitignore
     ~/.ssh/config:
       path: ssh-config
-      if: '[ "$(uname -s)" = "Linux" ]'
-    ~/.ssh/config:
-      path: ssh-config-mac
-      if: '[ "$(uname -s)" = "Darwin" ]'
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.Brewfile:
@@ -58,6 +54,13 @@
         brew update 2>&1
         brew bundle
         brew cleanup --quiet
+
+        # Annoying. Due to pyyaml being deprecated in Homebrew
+        # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
+        pip install --break-system-packages --user pyyaml
+
+        # For Mac this is useful.
+        echo "     UseKeychain yes" >>.ssh/config
       fi
     quiet: true
     stderr: true
