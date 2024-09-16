@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "mas-cli/tap"
+tap "buo/cask-upgrade"
 brew "libpng"
 brew "zstd"
 brew "ca-certificates"
