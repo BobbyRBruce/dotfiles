@@ -1,6 +1,7 @@
 Host *
+    IgnoreUnknown UseKeychain,AddKeysToAgent
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa
+    UseKeychain yes
 
 Host amarillo
     User bbruce
