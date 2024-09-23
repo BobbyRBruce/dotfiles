@@ -26,9 +26,9 @@ export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include"
 
 
 # Updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]
+if [ -f "$HOME/.bin/google-cloud-sdk/path.zsh.inc" ]
 then
-    . "$HOME/google-cloud-sdk/path.zsh.inc"
+    . "$HOME/.bin/google-cloud-sdk/path.zsh.inc"
 fi
 
 # The next line enables shell command completion for gcloud.

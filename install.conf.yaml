@@ -83,5 +83,16 @@
         fi
       fi
 
+  - description: Setup Google Cloud SDK
+    command: |
+      if [ ! -d "~/.bin/google-cloud-sdk" ]; then
+        mkdir -p ~/.bin
+        cd ~/.bin
+        wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz
+        tar xzf google-cloud-sdk.tar.gz
+        rm google-cloud-cli-darwin-arm.tar.gz
+        ./google-cloud-sdk/install.sh --no-compile-python --quieti -path-update false --command-completion false --install-python false
+      fi
+
   - description: Installing gh copilot
     command: gh extension install github/gh-copilot
