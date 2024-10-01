@@ -27,3 +27,5 @@
 	git-commit-alias = dd4be1b6fb9973d63eba334d8bd92b3da30b3e72
 [commit]
 	gpgsign = true
+[clean]
+	requireForce = false
