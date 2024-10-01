@@ -52,6 +52,7 @@ brew "virtualenv"
 brew "wget"
 cask "applite"
 cask "balenaetcher"
+cask "docker"
 cask "handbrake"
 cask "mactex"
 cask "microsoft-auto-update"
@@ -89,7 +90,6 @@ mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "SpeakLine", id: 441968334
 mas "Speedtest", id: 1153157709
-mas "Telegram", id: 747648890
 mas "UTM", id: 1538878817
 mas "Xcode", id: 497799835
 vscode "bierner.github-markdown-preview"
