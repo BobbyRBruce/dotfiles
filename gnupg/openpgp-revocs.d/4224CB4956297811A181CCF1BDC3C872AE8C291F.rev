@@ -1,0 +1,37 @@
+This is a revocation certificate for the OpenPGP key:
+
+pub   rsa4096 2024-08-29 [S] [expires: 2024-09-05]
+      4224CB4956297811A181CCF1BDC3C872AE8C291F
+uid          Bobby Bruce 2 (Test) <bobbyrbruce@icloud.com>
+
+A revocation certificate is a kind of "kill switch" to publicly
+declare that a key shall not anymore be used.  It is not possible
+to retract such a revocation certificate once it has been published.
+
+Use it to revoke this key in case of a compromise or loss of
+the secret key.  However, if the secret key is still accessible,
+it is better to generate a new revocation certificate and give
+a reason for the revocation.  For details see the description of
+of the gpg command "--generate-revocation" in the GnuPG manual.
+
+To avoid an accidental use of this file, a colon has been inserted
+before the 5 dashes below.  Remove this colon with a text editor
+before importing and publishing this revocation certificate.
+
+:-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iQI2BCABCAAgFiEEQiTLSVYpeBGhgczxvcPIcq6MKR8FAmbQ8NoCHQAACgkQvcPI
+cq6MKR+RBQ//dPtw9JcweJUNayB+s27oET9uJxrGRWTCvhjpgf2P3Jn19eoNxZTo
+bcCI21pcbMN/BF+SOSziBTLyxBpP/qtyBzZ3R3WG66r/VLFUbw+Xq4m3hBIn7o+Q
++SUNPa45xLdabkAdeYcePMdoQ61qV0YsTDtibtvoSSFjTgAsZVkY3STRJdHEvkT3
+4617T7V1xNwD0py8Y99cxrPmgFCRYaQ4BNwIEndZ798xAhYilog6GBDjptIFtA7G
+FV7no/S4O5I6OP8rmxubwaO8RBnNJ8Z1Cp3rofhLEN/r1v3RY5Kvo2+ntU3O1OQm
+4DF2oGVWc3j2jw+vH1dk1rINUwdgTIg6sQUYJdEZMDmRWpZ9xskt9HwQfUspsx+4
+2EvYaBfU6JdocuxZJvQS80cN4YzohhC0GEAVe+amdozbcOzcA+tQMjgIA7vfkDBL
+tdGzm80DHB/OQGCch8Txy8iOoy/m3W8fvGpErjPv0CFFO/KKPQehYb6PUK+OboVF
+vMpMWuz3R+SKxdJWLDlIFKOfc1+pIHdXgs8cKwREqV1jqq0cCYSiwFG4Aj0+lHCG
+E4Co5+oQDMfXK9pIuoLH7mzVZYvhP7Ff8Wjm96A6N3o3XUyaPeoEZtq3d8w/LELZ
+nVA7C4gZ1wFaC/VDQWi5yewbYJbfi1F+K8Etdp9KphgebL5Wf2MeU7I=
+=m9Ug
+-----END PGP PUBLIC KEY BLOCK-----
