@@ -10,6 +10,7 @@
 - clean: ['~']
 
 - link:
+    ~/.bin/docker-run: docker-run
     ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
     ~/.config/gh: gh
