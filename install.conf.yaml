@@ -11,6 +11,7 @@
 
 - link:
     ~/.bin/docker-run: docker-run
+    ~/.gsutil: gsutil
     ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
     ~/.gnupg: gnupg
@@ -89,9 +90,9 @@
         mkdir -p ~/.bin
         cd ~/.bin
         wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz
-        tar xzf google-cloud-sdk.tar.gz
+        tar xzf google-cloud-cli-darwin-arm.tar.gz
         rm google-cloud-cli-darwin-arm.tar.gz
-        ./google-cloud-sdk/install.sh --no-compile-python --quieti -path-update false --command-completion false --install-python false
+        ./google-cloud-sdk/install.sh --no-compile-python --quiet --path-update false --command-completion false --install-python false
       fi
 
   - description: Installing gh copilot

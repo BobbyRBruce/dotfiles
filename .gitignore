@@ -1,3 +1,4 @@
 Brewfile.lock.json
 gnupg/public-keys.d/pubring.db.lock
 gnupg/public-keys.d/.*
+gsutil/credstore2.lock
