@@ -42,3 +42,5 @@ export GPG_TTY=$(tty)
 
 # Add the ~/.bin directory to the PATH.
 export PATH="$HOME/.bin:$PATH"
+
+export BUILDX_NO_DEFAULT_ATTESTATIONS=1
