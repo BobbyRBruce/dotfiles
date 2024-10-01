@@ -6,7 +6,8 @@ filetype indent plugin on
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default
-set clipboard+=unnamedplus
+set clipboard=unnamed
+set paste
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
