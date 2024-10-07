@@ -22,7 +22,7 @@
 [core]
     excludesfiles = ~/.gitignore
     editor = "vim"
-    page = "less -FX"
+    pager = "less -FX"
 [oh-my-zsh]
 	git-commit-alias = dd4be1b6fb9973d63eba334d8bd92b3da30b3e72
 [commit]
