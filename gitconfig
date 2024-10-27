@@ -29,3 +29,5 @@
 	gpgsign = true
 [clean]
 	requireForce = false
+[blame]
+    ignoreRevsFile = .git-blame-ignore-revs
