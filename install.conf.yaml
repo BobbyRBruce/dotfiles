@@ -59,7 +59,7 @@
 
         # Annoying. Due to pyyaml being deprecated in Homebrew
         # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
-        pip install --break-system-packages --user pyyaml
+        pip3 install --break-system-packages --user pyyaml
       fi
     quiet: true
     stderr: true
