@@ -11,7 +11,6 @@
 
 - link:
     ~/.bin/docker-run: docker-run
-    ~/.gsutil: gsutil
     ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
     ~/.gnupg: gnupg
@@ -82,17 +81,6 @@
             cat apt-install-list.txt | xargs -n 1 apt install -y
           fi
         fi
-      fi
-
-  - description: Setup Google Cloud SDK
-    command: |
-      if [ ! -d "~/.bin/google-cloud-sdk" ]; then
-        mkdir -p ~/.bin
-        cd ~/.bin
-        wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-darwin-arm.tar.gz
-        tar xzf google-cloud-cli-darwin-arm.tar.gz
-        rm google-cloud-cli-darwin-arm.tar.gz
-        ./google-cloud-sdk/install.sh --no-compile-python --quiet --path-update false --command-completion false --install-python false
       fi
 
   - description: Installing gh copilot
