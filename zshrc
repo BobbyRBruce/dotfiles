@@ -46,3 +46,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Set Github CoPilot Alias.
 eval "$(gh copilot alias -- zsh)"
+export PATH="/opt/homebrew/opt/trash/bin:$PATH"

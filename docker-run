@@ -2,4 +2,4 @@
 
 # A simple wrapper for this docker command I type regularly.
 
-docker run -u $UID:$GID -v "$(pwd)":/workdir -w /workdir -it --rm $@
+podman run -u $UID:$GID -v "$(pwd)":/workdir -w /workdir -it --rm $@

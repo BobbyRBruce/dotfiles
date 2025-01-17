@@ -22,9 +22,6 @@
       path: ssh-config
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-    ~/.Brewfile:
-      path: Brewfile
-      if: '[ "$(uname -s)" = "Darwin" ]'
     ~/.profile: profile
     ~/.bash_logout: bash_logout
     ~/.bash_profile: bash_profile
@@ -39,7 +36,6 @@
       then
        ./ohmyz-install.sh
       fi
-    stderr: true
 
   - description: Adding private key passcode to keychain
     command: |
@@ -55,14 +51,12 @@
         ./brew-install.sh
         brew update 2>&1
         brew bundle
-        brew cleanup --quiet
+        brew cleanup
 
         # Annoying. Due to pyyaml being deprecated in Homebrew
         # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
         pip3 install --break-system-packages --user pyyaml
       fi
-    quiet: true
-    stderr: true
 
   - description: Running Linux/APT Setup
     command: |
