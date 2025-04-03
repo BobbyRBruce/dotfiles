@@ -47,3 +47,8 @@ source $ZSH/oh-my-zsh.sh
 # Set Github CoPilot Alias.
 eval "$(gh copilot alias -- zsh)"
 export PATH="/opt/homebrew/opt/trash/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/bobbyrbruce/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
