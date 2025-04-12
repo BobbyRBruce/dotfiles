@@ -18,8 +18,7 @@
     ~/.config/gh-copilot: gh-copilot
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
-    ~/.ssh/config:
-      path: ssh-config
+    ~/.ssh/config: ssh-config
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.profile: profile
