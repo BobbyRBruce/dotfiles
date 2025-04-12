@@ -21,7 +21,6 @@
     ~/.ssh/config: ssh-config
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-    ~/.profile: profile
     ~/.bash_logout: bash_logout
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
