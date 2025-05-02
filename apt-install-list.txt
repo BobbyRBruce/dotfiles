@@ -38,3 +38,5 @@ wget
 cmake
 doxygen
 gh
+pinentry-tty
+gpg
