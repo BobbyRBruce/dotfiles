@@ -13,7 +13,6 @@
     ~/.bin/docker-run: docker-run
     ~/.bin/gh-repo-sync: gh-repo-sync
     ~/.vimrc: vimrc
-    ~/.gnupg: gnupg
     ~/.config/gh: gh
     ~/.config/gh-copilot: gh-copilot
     ~/.gitconfig: gitconfig
