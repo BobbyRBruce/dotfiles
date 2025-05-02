@@ -63,17 +63,11 @@
         which apt 2>&1 >/dev/null
         if [[ $? == 0 ]]
         then
-          command sudo &>/dev/null
-          if [[ $? == 0 ]]
-          then
-           sudo apt update -y
-           cat apt-install-list.txt |  xargs -n 1 sudo apt install -y
-          else
-            apt update -y
-            cat apt-install-list.txt | xargs -n 1 apt install -y
-          fi
+          sudo apt update -y
+          sudo apt upgrade -y
+          cat apt-install-list.txt |  xargs sudo apt install -y
         fi
       fi
 
   - description: Installing gh copilot
-    command: gh extension install github/gh-copilot
+    command: gh extension install github/gh-copilot || exit 0
