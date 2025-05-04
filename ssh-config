@@ -11,17 +11,17 @@ Host amarillo
     User bbruce
     Hostname amarillo.cs.ucdavis.edu
 
-Host page
+Host bbruce-macmini
     User bobbyrbruce
-    Hostname page.cs.ucdavis.edu
+    Hostname bbruce-macmini.local
+
+Host bbruce-mbp
+    User bobbyrbruce
+    Hostname bbruce-mbp.local
 
 Host loupe
     User bbruce
     Hostname loupe.cs.wisc.edu
-
-Host blackmachine
-    User bobbyrbruce
-    Hostname blackmachine.local
 
 Host challenger
     User bbruce
