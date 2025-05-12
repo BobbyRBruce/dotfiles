@@ -27,6 +27,7 @@ brew "gnupg"
 brew "gpac"
 brew "pkgconf"
 brew "hdf5"
+brew "iperf3"
 brew "jq"
 brew "libunwind-headers"
 brew "libyaml"
@@ -36,6 +37,7 @@ brew "mkvtoolnix"
 brew "ninja"
 brew "openjdk"
 brew "pandoc"
+brew "pdm"
 brew "pinentry-mac"
 brew "pre-commit"
 brew "pyinstaller"
@@ -50,10 +52,10 @@ brew "torsocks"
 brew "trash"
 brew "virtualenv"
 brew "wget"
+brew "wireshark"
 cask "balenaetcher"
 cask "docker"
 cask "handbrake"
-cask "mactex"
 cask "microsoft-auto-update"
 cask "microsoft-teams"
 cask "raspberry-pi-imager"
@@ -65,7 +67,7 @@ mas "AdBlock", id: 1402042596
 mas "Amphetamine", id: 937984704
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
-mas "Draw Things", id: 6444050820
+mas "Discovery", id: 1381004916
 mas "Gapplin", id: 768053424
 mas "Keynote", id: 409183694
 mas "Mapper", id: 1589391989
@@ -85,8 +87,7 @@ mas "Parcel", id: 639968404
 mas "Prime Video", id: 545519333
 mas "Snake.io+", id: 6443553808
 mas "Speedtest", id: 1153157709
-mas "UTM", id: 1538878817
-mas "Xcode", id: 497799835
+mas "Whisper Transcription", id: 1668083311
 vscode "bierner.github-markdown-preview"
 vscode "christian-kohler.npm-intellisense"
 vscode "codezombiech.gitignore"
@@ -105,6 +106,7 @@ vscode "hediet.vscode-drawio"
 vscode "james-yu.latex-workshop"
 vscode "marp-team.marp-vscode"
 vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
