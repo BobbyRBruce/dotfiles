@@ -53,12 +53,13 @@
         # Annoying. Due to pyyaml being deprecated in Homebrew
         # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
         pip3 install --break-system-packages --user pyyaml
-        i
 
-      # Mac has a superior pinentry which utilizts touchid.
-      # We set this up here.
-      if [ ! -f "~/.gnupg/gpg-agent.confg" ]; then
-        echo pinentry-program $(which pinentry-touchid) > ~/.gnupg/gpg-agent.conf
+        # Mac has a superior pinentry which utilizts touchid.
+        # We set this up here.
+        if [ ! -f "~/.gnupg/gpg-agent.confg" ]; then
+          echo pinentry-program $(which pinentry-touchid) \
+            > ~/.gnupg/gpg-agent.conf
+        fi
       fi
 
   - description: Running Linux/APT Setup
