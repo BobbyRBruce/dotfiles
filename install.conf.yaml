@@ -46,9 +46,8 @@
       if [ "$(uname -s)" = "Darwin" ]
       then
         ./brew-install.sh
-        brew update 2>&1
-        brew bundle
-        brew cleanup
+        brew update
+        brew bundle install --cleanup
 
         # Annoying. Due to pyyaml being deprecated in Homebrew
         # but a requirement in gem5 to check tags against MAINTAINERS.yaml.
