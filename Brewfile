@@ -18,6 +18,7 @@ brew "commitlint"
 brew "coreutils"
 brew "doxygen"
 brew "harfbuzz"
+brew "python@3.12"
 brew "libass"
 brew "ffmpeg"
 brew "gh"
@@ -40,12 +41,12 @@ brew "lit"
 brew "mas"
 brew "mkvtoolnix"
 brew "ninja"
-brew "protobuf"
 brew "openjdk"
 brew "pandoc"
 brew "pdm"
 brew "pinentry-mac"
 brew "pre-commit"
+brew "protobuf"
 brew "pyinstaller"
 brew "pylint"
 brew "python-matplotlib"
@@ -89,9 +90,7 @@ mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
-mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
 mas "Speedtest", id: 1153157709
 vscode "bierner.github-markdown-preview"
 vscode "codezombiech.gitignore"
@@ -130,9 +129,7 @@ vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.powershell"
-vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-repositories"
-vscode "ms-vscode.remote-server"
 vscode "ms-vscode.vscode-copilot-vision"
 vscode "ms-vscode.vscode-websearchforcopilot"
 vscode "ms-vsliveshare.vsliveshare"
