@@ -46,7 +46,7 @@
       if [ "$(uname -s)" = "Darwin" ]
       then
         ./brew-install.sh
-        brew update
+        brew update 2>&1
         brew bundle install --cleanup
 
         # Annoying. Due to pyyaml being deprecated in Homebrew
@@ -56,8 +56,9 @@
         # Mac has a superior pinentry which utilizts touchid.
         # We set this up here.
         if [ ! -f "~/.gnupg/gpg-agent.confg" ]; then
-          echo pinentry-program $(which pinentry-touchid) \
+          echo pinentry-program $(brew --prefix)/bin/pinentry-mac  \
             > ~/.gnupg/gpg-agent.conf
+          pkill -TERM gpg-agent || true
         fi
       fi
 
