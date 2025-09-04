@@ -5,7 +5,7 @@ Host *
 
 Host raspberrypi
     User bbruce
-    Hostname 192.168.1.252
+    Hostname raspberrypi.local
 
 Host amarillo
     User bbruce
