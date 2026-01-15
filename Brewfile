@@ -1,51 +1,53 @@
 tap "buo/cask-upgrade"
 brew "act"
 brew "libpng"
+brew "xz"
 brew "zstd"
+brew "jpeg-xl"
 brew "ca-certificates"
-brew "openssl@3"
+brew "libyaml"
 brew "python@3.13"
+brew "azure-cli"
 brew "black"
-brew "icu4c@77"
 brew "boost"
 brew "glib"
 brew "capstone"
 brew "certifi"
+brew "clang-format"
 brew "cmake"
 brew "node"
 brew "commitlint"
 brew "coreutils"
 brew "doxygen"
-brew "harfbuzz"
-brew "python@3.12"
-brew "libass"
 brew "ffmpeg"
+brew "gcc"
 brew "gh"
+brew "icu4c@77"
 brew "ghostscript"
 brew "git"
 brew "git-crypt"
 brew "git-lfs"
-brew "libassuan"
 brew "gnupg"
 brew "gpac"
 brew "gperftools"
 brew "pkgconf"
 brew "hdf5"
-brew "icu4c@76"
+brew "iperf"
 brew "iperf3"
 brew "jq"
 brew "libunwind-headers"
-brew "libyaml"
+brew "python@3.12"
 brew "lit"
 brew "mas"
 brew "mkvtoolnix"
 brew "ninja"
+brew "protobuf"
+brew "openai-whisper"
 brew "openjdk"
 brew "pandoc"
 brew "pdm"
 brew "pinentry-mac"
 brew "pre-commit"
-brew "protobuf"
 brew "pyinstaller"
 brew "pylint"
 brew "python-matplotlib"
@@ -60,36 +62,44 @@ brew "virtualenv"
 brew "wget"
 brew "wireshark"
 cask "balenaetcher"
-cask "docker"
-cask "handbrake"
+cask "codex"
+cask "docker-desktop"
+cask "handbrake-app"
+cask "launchcontrol"
 cask "microsoft-auto-update"
 cask "microsoft-teams"
-cask "ollamac"
 cask "raspberry-pi-imager"
 cask "steam"
 cask "transmission"
-cask "virtualbuddy"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 mas "AdBlock", id: 1402042596
 mas "Amphetamine", id: 937984704
+mas "Cake Wallet", id: 1334702542
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Discovery", id: 1381004916
-mas "Gapplin", id: 768053424
+mas "Drive Capacity Tester", id: 1645711424
+mas "Folder Quick Look", id: 6753110395
 mas "Go Map!!", id: 592990211
+mas "IOBrowser", id: 6444616879
 mas "Keynote", id: 409183694
+mas "Magic Disk Benchmark", id: 1608793370
 mas "Mapper", id: 1589391989
-mas "Messenger", id: 1480068668
+mas "Meshtastic", id: 1586432531
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
 mas "Speedtest", id: 1153157709
+mas "Wayback Machine", id: 1472432422
+mas "WhatsApp", id: 310633997
 vscode "bierner.github-markdown-preview"
 vscode "codezombiech.gitignore"
 vscode "davidanson.vscode-markdownlint"
@@ -97,17 +107,17 @@ vscode "dotjoshjohnson.xml"
 vscode "github.codespaces"
 vscode "github.copilot"
 vscode "github.copilot-chat"
-vscode "github.copilot-workspace"
 vscode "github.remotehub"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "hashicorp.hcl"
 vscode "hediet.vscode-drawio"
-vscode "james-yu.latex-workshop"
 vscode "marp-team.marp-vscode"
 vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-azureresourcegroups"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-azuretools.vscode-documentdb"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
 vscode "ms-python.python"
@@ -131,11 +141,13 @@ vscode "ms-vscode.remote-repositories"
 vscode "ms-vscode.vscode-copilot-vision"
 vscode "ms-vscode.vscode-websearchforcopilot"
 vscode "ms-vsliveshare.vsliveshare"
+vscode "ms-windows-ai-studio.windows-ai-studio"
 vscode "openai.chatgpt"
 vscode "redhat.vscode-yaml"
 vscode "sanjulaganepola.github-local-actions"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "tamasfe.even-better-toml"
+vscode "teamsdevapp.vscode-ai-foundry"
 vscode "tomoki1207.pdf"
 vscode "tsinghua-hexin-joint-institute.gem5-slicc"
 vscode "waderyan.gitblame"
