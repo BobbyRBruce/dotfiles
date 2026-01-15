@@ -46,7 +46,18 @@ source $ZSH/oh-my-zsh.sh
 
 # Set Github CoPilot Alias.
 eval "$(gh copilot alias -- zsh)"
-export PATH="/opt/homebrew/opt/trash/bin:$PATH"
+
+
+
+# Setup Homrbrew if available.
+if [[ -v HOMEBREW_PREFIX ]]
+then
+  # Sets up the brew shell env (allows for brew-related auto-completion).
+  eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
+  export PATH="/opt/homebrew/opt/trash/bin:$PATH"
+
+fi
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/bobbyrbruce/.docker/completions $fpath)
 autoload -Uz compinit

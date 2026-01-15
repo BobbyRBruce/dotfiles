@@ -6,9 +6,6 @@
 # This env var is not set.
 if [[ -v HOMEBREW_PREFIX ]]
 then
-  # Sets up the brew shell env (allows for brew-related auto-completion).
-  eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
-
   # Ensures that headers and libraries installed via homebrew are set to CPATH
   # and LIBRARY PATH.
   export CPATH="$HOMEBREW_PREFIX/include:$CPATH"

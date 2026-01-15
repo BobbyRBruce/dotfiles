@@ -18,7 +18,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.ssh/config: ssh-config
-    ~/.zprofile: zprofile
+    ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/.bash_logout: bash_logout
     ~/.bash_profile: bash_profile
