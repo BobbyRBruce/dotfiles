@@ -47,19 +47,37 @@ source $ZSH/oh-my-zsh.sh
 # Set Github CoPilot Alias.
 eval "$(gh copilot alias -- zsh)"
 
-
-
 # Setup Homrbrew if available.
 if [[ -v HOMEBREW_PREFIX ]]
 then
-  # Sets up the brew shell env (allows for brew-related auto-completion).
+   # Ensures that headers and libraries installed via homebrew are set to CPATH
+  # and LIBRARY PATH.
+  export CPATH="$HOMEBREW_PREFIX/include:$CPATH"
+  export LIBRARY_PATH="$HOMEBREW_PREFIX/lib:$LIBRARY_PATH"
+
+  # [NOT REQUIRED] Maps `python` to `python3`, `pip` to `pip3`, etc.
+  export PATH=$HOMEBREW_PREFIX/opt/python3/libexec/bin:$PATH
+
+  # Add the Homebrew LLVM to the PATH, LIBRARY_PATH, INCLUDE_PATH
+  # We ensure these are at the beginning of the path so it takes
+  # priority over any other LLVM installs on the system.
+  export PATH="$HOMEBREW_PREFIX/opt/llvm/bin:$PATH"
+  export LIBRARY_PATH="$HOMEBREW_PREFIX/opt/llvm/lib:$LIBRARY_PATH"
+  export INCLUDE_PATH="$HOMEBREW_PREFIX/opt/llvm/include:$INCLUDE_PATH"
+
+  # Sets the Homebrew LLVM stdlib and inc. files to the default via LDFLAGS and
+  # CPPFLAGS.
+  export LDFLAGS="-L${HOMEBREW_PREFIX}/opt/llvm/lib"
+  export CPPFLAGS="-I${HOMEBREW_PREFIX}/opt/llvm/include"
+ # Sets up the brew shell env (allows for brew-related auto-completion).
   eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
   export PATH="/opt/homebrew/opt/trash/bin:$PATH"
-
 fi
 
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+# Added to enable Docker CLI completions.
 fpath=(/Users/bobbyrbruce/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
-# End of Docker CLI completions
+
+# Adds the ~/.bin directory to the PATH.
+export PATH="$HOME/.bin:$PATH"
