@@ -24,6 +24,16 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
 
+    # Clawdbot workspace (safe to sync; no API keys/tokens here)
+    ~/.openclaw/AGENTS.md: clawd/AGENTS.md
+    ~/.openclaw/HEARTBEAT.md: clawd/HEARTBEAT.md
+    ~/.openclaw/IDENTITY.md: clawd/IDENTITY.md
+    ~/.openclaw/MEMORY.md: clawd/MEMORY.md
+    ~/.openclaw/SOUL.md: clawd/SOUL.md
+    ~/.openclaw/TOOLS.md: clawd/TOOLS.md
+    ~/.openclaw/USER.md: clawd/USER.md
+    ~/.openclaw//memory: clawd/memory
+
 - shell:
   - description: Obtaining Submodules
     command: git submodule update --init --recursive

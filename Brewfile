@@ -16,7 +16,6 @@ brew "certifi"
 brew "clang-format"
 brew "cmake"
 brew "node"
-brew "commitlint"
 brew "coreutils"
 brew "doxygen"
 brew "ffmpeg"
@@ -37,15 +36,12 @@ brew "iperf3"
 brew "jq"
 brew "libunwind-headers"
 brew "python@3.12"
-brew "lit"
 brew "mas"
-brew "mkvtoolnix"
-brew "ninja"
 brew "protobuf"
 brew "openai-whisper"
+brew "openclaw"
 brew "openjdk"
 brew "pandoc"
-brew "pdm"
 brew "pinentry-mac"
 brew "pre-commit"
 brew "pyinstaller"
@@ -80,7 +76,6 @@ mas "Cake Wallet", id: 1334702542
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Discovery", id: 1381004916
-mas "Drive Capacity Tester", id: 1645711424
 mas "Folder Quick Look", id: 6753110395
 mas "Go Map!!", id: 592990211
 mas "IOBrowser", id: 6444616879

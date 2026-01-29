@@ -78,3 +78,5 @@ compinit
 
 # Adds the ~/.bin directory to the PATH.
 export PATH="$HOME/.bin:$PATH"
+
+export PATH="$HOME/.npm-global/bin:$PATH"
