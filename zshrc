@@ -44,9 +44,6 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-# Set Github CoPilot Alias.
-eval "$(gh copilot alias -- zsh)"
-
 # Setup Homrbrew if available.
 if [[ -v HOMEBREW_PREFIX ]]
 then
