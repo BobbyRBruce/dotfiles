@@ -8,6 +8,7 @@ brew "zstd"
 brew "jpeg-xl"
 brew "ca-certificates"
 brew "libyaml"
+brew "openssl@3"
 brew "python@3.13"
 brew "azure-cli"
 brew "black"
@@ -24,12 +25,15 @@ brew "gcc"
 brew "node"
 brew "gemini-cli"
 brew "gh"
+brew "harfbuzz"
 brew "icu4c@77"
 brew "ghostscript"
 brew "git"
 brew "git-crypt"
 brew "git-lfs"
+brew "libassuan"
 brew "gnupg"
+brew "go"
 brew "gpac"
 brew "gperftools"
 brew "pkgconf"
@@ -39,7 +43,6 @@ brew "iperf"
 brew "iperf3"
 brew "jq"
 brew "libunwind-headers"
-brew "python@3.12"
 brew "lit"
 brew "mas"
 brew "protobuf"
@@ -53,6 +56,7 @@ brew "pyinstaller"
 brew "pylint"
 brew "python-matplotlib"
 brew "python-setuptools"
+brew "python@3.12"
 brew "python-tk@3.12"
 brew "ruby"
 brew "scons"
@@ -65,6 +69,7 @@ brew "wget"
 brew "wireshark"
 brew "antoniorodr/memo/memo"
 brew "steipete/tap/bird"
+brew "steipete/tap/camsnap"
 brew "steipete/tap/gifgrep"
 brew "steipete/tap/goplaces"
 brew "steipete/tap/imsg"
@@ -76,6 +81,7 @@ brew "steipete/tap/summarize"
 cask "1password-cli"
 cask "balenaetcher"
 cask "codex"
+cask "copilot-cli"
 cask "discord"
 cask "docker-desktop"
 cask "handbrake-app"
@@ -97,17 +103,18 @@ mas "Developer", id: 640199958
 mas "Discovery", id: 1381004916
 mas "Drive Capacity Tester", id: 1645711424
 mas "Folder Quick Look", id: 6753110395
+mas "Game Controller Tester", id: 1500593102
+mas "Get Archive", id: 6449024584
 mas "Go Map!!", id: 592990211
 mas "IOBrowser", id: 6444616879
 mas "Keynote", id: 409183694
 mas "Magic Disk Benchmark", id: 1608793370
 mas "Mapper", id: 1589391989
 mas "Meshtastic", id: 1586432531
+mas "Messenger", id: 1480068668
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft To Do", id: 1274495053
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
@@ -116,6 +123,7 @@ mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
 mas "Wayback Machine", id: 1472432422
 mas "WhatsApp", id: 310633997
+mas "Xcode", id: 497799835
 vscode "bierner.github-markdown-preview"
 vscode "codezombiech.gitignore"
 vscode "davidanson.vscode-markdownlint"
