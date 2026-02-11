@@ -19,7 +19,9 @@
 - Work off `upstream/develop`; PRs target `gem5/gem5:develop`.
 - Build command convention on Bobby’s Mac: `scons build/ALL/gem5.opt -j$(nproc)` (Homebrew `nproc` is installed; keep the command consistent across machines rather than branching).
 - Commit message rules: subject line must start with an allowed tag from `MAINTAINERS.yaml`; commit-msg hook enforces max header length 65 chars (Bobby prefers aiming for ~62 chars). Tags largely map to directory structure (e.g., `util-docker` ↔ `util/dockerfiles`, `mem-cache` ↔ `src/mem/cache`). When in doubt, look at common practice: `git log --oneline -- <path>` and mirror the prevalent tag usage.
+- **Formatting:** gem5 repo has **clang-format** enabled; when modifying C++ code, you may run clang-format to auto-format, or at least consult the repo’s `.clang-format` as the canonical C++ style reference.
 - Testing expectations: CI workflows run on every PR and are merge-blocking on failure; Daily/Weekly workflows run on `develop` (Daily can take ~12h; Weekly can take ~2–3 days) and should ideally stay green.
+- **CI reporting procedure (Bobby preference):** because Daily can be flaky, default to reporting the status of the **latest Daily** run (and don’t over-index on older Daily flakes unless asked).
 - DRAMSys Daily test is defined in `.github/workflows/daily-tests.yaml` and runs three example configs:
   - `configs/example/gem5_library/dramsys/arm-hello-dramsys.py`
   - `configs/example/gem5_library/dramsys/dramsys-traffic.py`
