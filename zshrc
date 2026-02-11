@@ -78,3 +78,6 @@ compinit
 
 # Adds the ~/.bin directory to the PATH.
 export PATH="$HOME/.bin:$PATH"
+
+# OpenClaw Completion
+source "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh"
