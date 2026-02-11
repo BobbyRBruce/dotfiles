@@ -25,13 +25,13 @@
     ~/.bashrc: bashrc
 
     # Clawdbot workspace (safe to sync; no API keys/tokens here)
-    ~/.openclaw/AGENTS.md: openclaw/AGENTS.md
-    ~/.openclaw/HEARTBEAT.md: openclaw/HEARTBEAT.md
-    ~/.openclaw/IDENTITY.md: openclaw/IDENTITY.md
-    ~/.openclaw/MEMORY.md: openclaw/MEMORY.md
-    ~/.openclaw/SOUL.md: openclaw/SOUL.md
-    ~/.openclaw/TOOLS.md: openclaw/TOOLS.md
-    ~/.openclaw/USER.md: openclaw/USER.md
+    ~/.openclaw/workspace/AGENTS.md: openclaw/AGENTS.md
+    ~/.openclaw/workspace/HEARTBEAT.md: openclaw/HEARTBEAT.md
+    ~/.openclaw/workspace/IDENTITY.md: openclaw/IDENTITY.md
+    ~/.openclaw/workspace/MEMORY.md: openclaw/MEMORY.md
+    ~/.openclaw/workspace/SOUL.md: openclaw/SOUL.md
+    ~/.openclaw/workspace/TOOLS.md: openclaw/TOOLS.md
+    ~/.openclaw/workspace/USER.md: openclaw/USER.md
 
 - shell:
   - description: Obtaining Submodules
