@@ -25,6 +25,7 @@
     ~/.bashrc: bashrc
 
     # Clawdbot workspace (safe to sync; no API keys/tokens here)
+    ~/.openclaw/workspace/BOOTSTRAP.md: openclaw/BOOTSTRAP.md
     ~/.openclaw/workspace/AGENTS.md: openclaw/AGENTS.md
     ~/.openclaw/workspace/HEARTBEAT.md: openclaw/HEARTBEAT.md
     ~/.openclaw/workspace/IDENTITY.md: openclaw/IDENTITY.md
