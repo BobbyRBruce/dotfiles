@@ -11,13 +11,13 @@ Host amarillo
     User bbruce
     Hostname amarillo.cs.ucdavis.edu
 
-Host bbruce-macmini
+Host macmini
     User bobbyrbruce
-    Hostname bbruce-macmini.local
+    Hostname bobbys-mac-mini.tailffeb2c.ts.net
 
-Host bbruce-mbp
+Host mbp
     User bobbyrbruce
-    Hostname bbruce-mbp.local
+    Hostname bobbys-macbook-pro.tailffeb2c.ts.net
 
 Host loupe
     User bbruce
