@@ -26,12 +26,12 @@ brew "node"
 brew "gemini-cli"
 brew "gh"
 brew "harfbuzz"
-brew "icu4c@77"
 brew "ghostscript"
 brew "git"
 brew "git-crypt"
 brew "git-lfs"
 brew "libassuan"
+brew "pinentry"
 brew "gnupg"
 brew "go"
 brew "gpac"
@@ -43,32 +43,28 @@ brew "iperf"
 brew "iperf3"
 brew "jq"
 brew "libunwind-headers"
+brew "python@3.12"
 brew "lit"
 brew "mas"
-brew "protobuf"
-brew "openai-whisper"
 brew "openclaw-cli"
 brew "openjdk"
-brew "pandoc"
 brew "pinentry-mac"
 brew "pre-commit"
+brew "protobuf"
 brew "pyinstaller"
 brew "pylint"
 brew "python-matplotlib"
 brew "python-setuptools"
-brew "python@3.12"
 brew "python-tk@3.12"
 brew "ruby"
 brew "scons"
+brew "tailscale"
 brew "telnet"
 brew "tmux"
 brew "trash"
-brew "uv"
 brew "virtualenv"
 brew "wget"
 brew "wireshark"
-brew "antoniorodr/memo/memo"
-brew "steipete/tap/bird"
 brew "steipete/tap/camsnap"
 brew "steipete/tap/gifgrep"
 brew "steipete/tap/goplaces"
@@ -97,13 +93,12 @@ cask "vlc"
 cask "zoom"
 mas "AdBlock", id: 1402042596
 mas "Amphetamine", id: 937984704
-mas "Cake Wallet", id: 1334702542
 mas "DaisyDisk", id: 411643860
 mas "Developer", id: 640199958
 mas "Discovery", id: 1381004916
 mas "Drive Capacity Tester", id: 1645711424
 mas "Folder Quick Look", id: 6753110395
-mas "Game Controller Tester", id: 1500593102
+mas "Friendly Streaming", id: 553245401
 mas "Get Archive", id: 6449024584
 mas "Go Map!!", id: 592990211
 mas "IOBrowser", id: 6444616879
@@ -111,7 +106,6 @@ mas "Keynote", id: 409183694
 mas "Magic Disk Benchmark", id: 1608793370
 mas "Mapper", id: 1589391989
 mas "Meshtastic", id: 1586432531
-mas "Messenger", id: 1480068668
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
@@ -122,14 +116,13 @@ mas "Pages", id: 409201541
 mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
 mas "Wayback Machine", id: 1472432422
-mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
 vscode "bierner.github-markdown-preview"
+vscode "bierner.markdown-preview-github-styles"
 vscode "codezombiech.gitignore"
 vscode "davidanson.vscode-markdownlint"
 vscode "dotjoshjohnson.xml"
 vscode "github.codespaces"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.remotehub"
 vscode "github.vscode-github-actions"
