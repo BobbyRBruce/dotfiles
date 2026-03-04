@@ -9,6 +9,7 @@
 
 ## Preferences
 - Keep responses calm, competent, and low on filler.
+- Prefers that I share generated files via Tailscale (send to `bbruce-mbp` when in doubt).
 
 ## gem5 Workflow (local + CI)
 - Local repo lives at `~/Workspaces/gem5`.
