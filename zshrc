@@ -79,5 +79,9 @@ compinit
 # Adds the ~/.bin directory to the PATH.
 export PATH="$HOME/.bin:$PATH"
 
+# Add NPM to path
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 # OpenClaw Completion
 source "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh"
+export PATH="/Library/TeX/texbin:$PATH"
