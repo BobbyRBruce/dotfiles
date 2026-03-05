@@ -6,6 +6,7 @@
       relink: true
       create: true
       force: true
+      backup: true
 
 - clean: ['~']
 
@@ -25,14 +26,10 @@
     ~/.bashrc: bashrc
 
     # Clawdbot workspace (safe to sync; no API keys/tokens here)
-    ~/.openclaw/workspace/BOOTSTRAP.md: openclaw/BOOTSTRAP.md
-    ~/.openclaw/workspace/AGENTS.md: openclaw/AGENTS.md
-    ~/.openclaw/workspace/HEARTBEAT.md: openclaw/HEARTBEAT.md
-    ~/.openclaw/workspace/IDENTITY.md: openclaw/IDENTITY.md
-    ~/.openclaw/workspace/MEMORY.md: openclaw/MEMORY.md
-    ~/.openclaw/workspace/SOUL.md: openclaw/SOUL.md
-    ~/.openclaw/workspace/TOOLS.md: openclaw/TOOLS.md
-    ~/.openclaw/workspace/USER.md: openclaw/USER.md
+    ~/.openclaw/workspace/:
+      glob: true
+      path: openclaw/*
+      type: hardlink
 
 - shell:
   - description: Obtaining Submodules
