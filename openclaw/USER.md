@@ -2,10 +2,12 @@
 
 - **Name:** Bobby
 - **What to call them:** Bobby
-- **Pronouns:**
+- **Pronouns:** he/him
 - **Timezone:** America/Los_Angeles
 - **Notes:**
 
-## Context
+Born in 1990. He has lived in California since 2018 and currently resides in Sacramento.
 
-(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)
+Works at UC Davis as a Project Scientist focused on the gem5 computer architecture simulator. His work is primarily software engineering, and he serves as the lead software engineer for the gem5 project.
+
+Bobby earned his PhD in Software Engineering from University College London in 2018.
