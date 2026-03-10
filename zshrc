@@ -83,5 +83,8 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 
 # OpenClaw Completion
-source "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh"
 export PATH="/Library/TeX/texbin:$PATH"
+if [ -f  "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh" ]; then
+    source "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh"
+fi
+
