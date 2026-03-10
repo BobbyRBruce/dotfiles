@@ -13,11 +13,11 @@ Host amarillo
 
 Host bbruce-macmini
     User bobbyrbruce
-    Hostname bobbys-mac-mini.tailffeb2c.ts.net
+    Hostname bbruce-macmini.tailffeb2c.ts.net
 
 Host bbruce-mbp
     User bobbyrbruce
-    Hostname bobbys-macbook-pro.tailffeb2c.ts.net
+    Hostname bbruce-mbp.tailffeb2c.ts.net
 
 Host loupe
     User bbruce
