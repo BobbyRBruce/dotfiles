@@ -73,8 +73,6 @@ fi
 
 # Added to enable Docker CLI completions.
 fpath=(/Users/bobbyrbruce/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
 
 # Adds the ~/.bin directory to the PATH.
 export PATH="$HOME/.bin:$PATH"
@@ -88,3 +86,5 @@ if [ -f  "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh" ]; then
     source "/Users/bobbyrbruce/.openclaw/completions/openclaw.zsh"
 fi
 
+autoload -Uz compinit
+compinit
