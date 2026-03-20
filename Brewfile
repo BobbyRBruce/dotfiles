@@ -27,6 +27,7 @@ brew "node"
 brew "gemini-cli"
 brew "gh"
 brew "harfbuzz"
+brew "tesseract"
 brew "ghostscript"
 brew "git"
 brew "git-crypt"
@@ -37,6 +38,7 @@ brew "gnupg"
 brew "go"
 brew "gpac"
 brew "gperftools"
+brew "protobuf"
 brew "grpc"
 brew "pkgconf"
 brew "hdf5"
@@ -48,17 +50,19 @@ brew "libunwind-headers"
 brew "python@3.12"
 brew "lit"
 brew "mas"
+brew "openai-whisper"
 brew "openclaw-cli"
 brew "openjdk"
 brew "pandoc"
 brew "pinentry-mac"
+brew "poppler"
 brew "pre-commit"
-brew "protobuf"
 brew "pyinstaller"
 brew "pylint"
 brew "python-matplotlib"
 brew "python-setuptools"
 brew "python-tk@3.12"
+brew "rsync"
 brew "ruby"
 brew "scons"
 brew "tailscale"
@@ -69,6 +73,7 @@ brew "trash"
 brew "virtualenv"
 brew "wget"
 brew "wireshark"
+brew "yt-dlp"
 brew "antoniorodr/memo/memo"
 brew "steipete/tap/camsnap"
 brew "steipete/tap/gifgrep"
@@ -102,15 +107,14 @@ mas "Developer", id: 640199958
 mas "Discovery", id: 1381004916
 mas "Drive Capacity Tester", id: 1645711424
 mas "Folder Quick Look", id: 6753110395
-mas "Friendly Streaming", id: 553245401
 mas "Get Archive", id: 6449024584
 mas "Go Map!!", id: 592990211
 mas "IOBrowser", id: 6444616879
 mas "Keynote", id: 409183694
 mas "Magic Disk Benchmark", id: 1608793370
-mas "Mapper", id: 1589391989
 mas "Meshtastic", id: 1586432531
 mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
 mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
@@ -119,7 +123,6 @@ mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
-mas "Wayback Machine", id: 1472432422
 mas "Xcode", id: 497799835
 vscode "bierner.github-markdown-preview"
 vscode "bierner.markdown-preview-github-styles"
