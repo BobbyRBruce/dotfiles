@@ -11,8 +11,11 @@ On each heartbeat poll:
    - "periodically"
    - "remind"
 3. For any clear periodic commitment, perform the promised check now.
-4. If there is something actionable/important, report it briefly.
-5. If nothing needs attention, reply exactly: `HEARTBEAT_OK`
+4. Check `/Users/bobbyrbruce/Library/CloudStorage/OneDrive-UniversityofCalifornia,Davis/macwhisper-recordings` for split Teams recordings and run:
+   - `python3 /Users/bobbyrbruce/.openclaw/workspace/scripts/merge_macwhisper_recordings.py`
+   - This should merge app+mic pairs, keep only merged files, and name outputs like `meeting-teams-YYYYMMDDTHHMMSSZ.mp4` (UTC, lowercase, dash-separated).
+5. If there is something actionable/important, report it briefly.
+6. If nothing needs attention, reply exactly: `HEARTBEAT_OK`
 
 Rules:
 - Be conservative. Only act on clear commitments.

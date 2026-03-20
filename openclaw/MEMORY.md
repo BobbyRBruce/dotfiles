@@ -10,6 +10,8 @@
 ## Preferences
 - Keep responses calm, competent, and low on filler.
 - Prefers that I share generated files via Tailscale (send to `bbruce-mbp` when in doubt).
+- For work-email archive local copies: if Archive export never fully completes, coverage from 2025 onward is acceptable; still aim for complete history when feasible.
+- For transcription tasks, prefer local transcription whenever possible; use OpenAI remote transcription only as a fallback when local is unavailable or unsuitable (to minimize API costs).
 
 ## gem5 Workflow (local + CI)
 - Local repo lives at `~/Workspaces/gem5`.
