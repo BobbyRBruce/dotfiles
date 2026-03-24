@@ -4,8 +4,8 @@ Host *
     UseKeychain yes
 
 Host raspberrypi
-    User bbruce
-    Hostname raspberrypi.local
+    User bobbyrbruce
+    Hostname bbruce-rbp.local
 
 Host amarillo
     User bbruce
